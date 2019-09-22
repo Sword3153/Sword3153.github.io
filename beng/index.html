@@ -230,7 +230,7 @@
                     999: {
                         img: [
                             '999-1.jpg',
-                            '999-2.jpg',
+                            '999-2.jpeg',
                         ],
                         title: '膜生物反应器（简称MBR）',
                         des: '一体式膜生物反应器（MBR）工艺是污水生物处理技术与膜分离技术的有机结合。' +
@@ -264,9 +264,9 @@
                     $('#des').text(pageData.des);
                     $.each(pageData.img,function (idx,item) {
                         if(idx){
-                            $('.cf').append('<li><img src="/uploads/custom/'+ item +'.jpg"/></li>');
+                            $('.cf').append('<li><img src="/uploads/custom/'+ item +'"/></li>');
                         }else {
-                            $('.cf').append('<li><img class="on" src="/uploads/custom/'+ item +'.jpg"/></li>');
+                            $('.cf').append('<li><img class="on" src="/uploads/custom/'+ item +'"/></li>');
                         }
                     })
                 }
