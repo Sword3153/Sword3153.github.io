@@ -8,15 +8,6 @@
     <link href="/templets/junding/css/public.css" rel="stylesheet" type="text/css" />
     <script src="/templets/junding/js/jquery-1.8.2.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/templets/junding/js/main.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?430579c489bddb6b10e67206face1d18";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
 </head>
 
 <body>
@@ -32,11 +23,11 @@
     <div class="qgtlogo">
         <div class="qgtlogo_l fl">
             <a href="/" title="">
-                <img src="/templets/junding/images/logo_1.png" alt="">
+                <img src="templets/junding/images/logo_1.png" alt="">
             </a>
         </div>
         <div class="qgtlogo_c fl">
-            <i><img src="/templets/junding/images/logo_2.png" alt=""></i>
+            <i><img src="templets/junding/images/logo_2.png" alt=""></i>
             <p>
                 <big>14年专注于环保过滤设备的生产与研发</big>
                 <span>打造压滤机行业典范</span>
@@ -44,13 +35,18 @@
             <div class="clearfix"></div>
         </div>
         <div class="qgtlogo_r fr">
-            <img src="/templets/junding/images/logo_3.png" alt="">
+            <img src="templets/junding/images/logo_3.png" alt="">
         </div>
         <div class="clearfix"></div>
     </div>
     <div class="clearfix"></div>
 </div>
-<script>$(function(){ var obj = $('.picshowxz>li>a'); obj.each(function(i){ $(this).attr('id',"tab1_p_"+i); }) })</script>
+<script>$(function () {
+    var obj = $('.picshowxz>li>a');
+    obj.each(function (i) {
+        $(this).attr('id', "tab1_p_" + i);
+    })
+})</script>
 <!-- logo over -->
 <!--导航-->
 <div class="nav">
@@ -58,12 +54,10 @@
         <ul>
             <li><a href="/" title="恒泉首页" id="ind_dq">恒泉首页</a></li>
             <li id="li-1"><a href="/about/index.html" title="关于我们">关于我们</a></li>
-            <li id="li-2"><a href="/yalvji/index.html" title="产品中心">产品中心</a></li>
-            <!--<li id="li-4"><a href="/yanshi/index.html" title="过滤演示">过滤演示</a></li>-->
-            <li id="li-3"><a href="/case/index.html" title="合作案例">合作案例</a></li>
-            <li id="li-5"><a href="/news/index.html" title="新闻中心">新闻中心 </a></li>
-            <li id="li-6"><a href="/renli/index.html" title="人力资源">人力资源 </a></li>
-            <li id="li-7"><a href="/contact/index.html" title="联系我们">联系我们</a></li>
+            <li id="li-2"><a href="/yalvji/index.html" title="水处理一体机">水处理一体机</a></li>
+            <li id="li-3"><a href="/case/index.html" title="压滤机">压滤机</a></li>
+            <li id="li-4"><a href="/news/index.html" title="环保方案设计">环保方案设计 </a></li>
+            <li id="li-5"><a href="/contact/index.html" title="联系我们">联系我们</a></li>
         </ul>
         <!--隐藏盒子-->
         <div id="box-1" class="hidden-box hidden-loc-index" style="width:150px; left:150px;">
@@ -78,11 +72,12 @@
         <div id="box-2" class="hidden-box hidden-loc-index">
             <ul class="picshowxz">
                 <p><span><a href="/yalvji"><img src="templets/junding/images/navtu1.png" alt=""/></a></span></p>
-                <li><a href="/yalvji" style="font-weight:bold; color:#fe9001;" title="压滤机系列">压滤机系列</a></li>
-                <li><a href="/yalvji/46.html">程控全自动压滤机</a></li>
-                <li><a href="/yalvji/10.html">程控全自动隔膜压滤机</a></li>
-                <li><a href="/yalvji/61.html">液压压滤机</a></li>
-                <li><a href="/yalvji/60.html">液压隔膜压滤机</a></li>
+                <li><a href="/beng/index.html?page=" style="font-weight:bold; color:#fe9001;" title="压滤机系列">压滤机系列</a>
+                </li>
+                <li><a href="/beng/index.html?page=46">程控全自动压滤机</a></li>
+                <li><a href="/beng/index.html?page=10">程控全自动隔膜压滤机</a></li>
+                <li><a href="/beng/index.html?page=61">液压压滤机</a></li>
+                <li><a href="/beng/index.html?page=60">液压隔膜压滤机</a></li>
 
                 <li><a href="/yalvji"
                        style="color:#fe9001; width:130px; height:24px; line-height:24px; display:block; text-align:center; border:1px solid #fe9001; margin:20px auto 0 auto;"
@@ -90,11 +85,11 @@
             </ul>
             <ul>
                 <p><span><a href="/fushu"><img src="templets/junding/images/navtu2.png" alt=""/></a></span></p>
-                <li><a href="/fushu" style="font-weight:bold; color:#fe9001;" title="压滤机附属系列">压滤机附属系列</a></li>
-                <li><a href="/fushu/73.html">皮带输送机</a></li>
-                <li><a href="/fushu/78.html">集液翻板</a></li>
-                <li><a href="/fushu/71.html">液压储泥斗</a></li>
-                <li><a href="/fushu/74.html">导料斗</a></li>
+                <li><a href="/beng/index.html" style="font-weight:bold; color:#fe9001;" title="压滤机附属系列">压滤机附属系列</a></li>
+                <li><a href="/beng/index.html?page=73">皮带输送机</a></li>
+                <li><a href="/beng/index.html?page=78">集液翻板</a></li>
+                <li><a href="/beng/index.html?page=71">液压储泥斗</a></li>
+                <li><a href="/beng/index.html?page=74">导料斗</a></li>
 
                 <li><a href="/fushu"
                        style="color:#fe9001; width:130px; height:24px; line-height:24px; display:block; text-align:center; border:1px solid #fe9001; margin:20px auto 0 auto;"
@@ -103,10 +98,10 @@
             <ul>
                 <p><span><a href="/peijian"><img src="templets/junding/images/navtu3.png" alt=""/></a></span></p>
                 <li><a href="/peijian" style="font-weight:bold; color:#fe9001;" title="配件系列">配件系列</a></li>
-                <li><a href="/peijian/44.html">各种型号滤板</a></li>
-                <li><a href="/peijian/81.html">整套液压站</a></li>
-                <li><a href="/peijian/41.html">各种型号手把</a></li>
-                <li><a href="/peijian/45.html">各种型号滤布</a></li>
+                <li><a href="/beng/index.html?page=44">各种型号滤板</a></li>
+                <li><a href="/beng/index.html?page=81">整套液压站</a></li>
+                <li><a href="/beng/index.html?page=41">各种型号手把</a></li>
+                <li><a href="/beng/index.html?page=45">各种型号滤布</a></li>
 
                 <li><a href="/peijian"
                        style="color:#fe9001; width:130px; height:24px; line-height:24px; display:block; text-align:center; border:1px solid #fe9001; margin:20px auto 0 auto;"
@@ -115,46 +110,30 @@
             <ul>
                 <p><span><a href="/beng"><img src="templets/junding/images/navtu4.png" alt=""/></a></span></p>
                 <li><a href="/beng" style="font-weight:bold; color:#fe9001;" title="输料泵">输料泵</a></li>
-                <li><a href="/beng/84.html">隔膜泵</a></li>
-                <li><a href="/beng/83.html">螺杆泵</a></li>
-                <li><a href="/beng/86.html">柱塞泵</a></li>
-                <li><a href="/beng/87.html">渣浆泵</a></li>
+                <li><a href="/beng/index.html?page=84">隔膜泵</a></li>
+                <li><a href="/beng/index.html?page=83">螺杆泵</a></li>
+                <li><a href="/beng/index.html?page=86">柱塞泵</a></li>
+                <li><a href="/beng/index.html?page=87">渣浆泵</a></li>
 
                 <li><a href="/beng"
                        style="color:#fe9001; width:130px; height:24px; line-height:24px; display:block; text-align:center; border:1px solid #fe9001; margin:20px auto 0 auto;"
                        title="">查看更多+</a></li>
             </ul>
-            <ul>
-                <p><span><a href="/beng"><img src="templets/junding/images/navtu5.jpeg" alt=""/></a></span></p>
+        </div>
+        <div id="box-3" class="hidden-box hidden-loc-index">
+            <ul class="picshowxz">
+                <p><span><a href="/beng"><img src="templets/junding/images/navtu5.jpeg" width="230" height="142"
+                                              alt=""/></a></span></p>
                 <li><a href="/beng" style="font-weight:bold; color:#fe9001;" title="一体机">一体机</a></li>
-                <li><a href="/beng/999.html">MBR地埋一体化污水处理设备</a></li>
+                <li><a href="/beng/index.html?page=999">MBR地埋一体化污水处理设备</a></li>
 
                 <li><a href="/beng"
                        style="color:#fe9001; width:130px; height:24px; line-height:24px; display:block; text-align:center; border:1px solid #fe9001; margin:20px auto 0 auto;"
                        title="">查看更多+</a></li>
-            </ul>
-        </div>
-
-        <div id="box-5" class="hidden-box hidden-loc-index" style="width:150px; left:600px;">
-            <ul style="width:150px; height:100px; border-right:none;">
-
-                <li style="width:150px;"><a href="/gs-news/" title="" style="width:150px;">公司新闻</a></li>
-
-                <li style="width:150px;"><a href="/hy-news/" title="" style="width:150px;">行业新闻</a></li>
-
-                <li style="width:150px;"><a href="/Questions/" title="" style="width:150px;">常见问题</a></li>
-
-            </ul>
-        </div>
-        <div id="box-7" class="hidden-box hidden-loc-index" style="width:150px; left:900px;">
-            <ul style="width:150px; height:70px; border-right:none;">
-                <li style="width:150px;"><a href="/download" title="" style="width:150px;">资料下载</a></li>
-                <li style="width:150px;"><a href="/contact" title="" style="width:150px;">在线留言</a></li>
             </ul>
         </div>
     </div>
 </div>
-<div class="clearfix"></div>
 <!--导航 over-->
 <!--大图-->
 <div class="banner_ny">
