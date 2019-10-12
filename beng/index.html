@@ -375,6 +375,9 @@
                     var pageData = data[pageIdx];
                     $('#title').text(pageData.title);
                     $('#des').text(pageData.des);
+                    $('#detail').text(pageData.detail);
+                    $('#param').attr('src','/uploads/custom/'+pageData.param)
+
                     $.each(pageData.img, function (idx, item) {
                         if (idx) {
                             $('.cf').append('<li><img src="/uploads/custom/' + item + '"/></li>');
@@ -383,254 +386,20 @@
                         }
                     })
                 }
-
-
             </script>
             <div class="clearfix"></div>
         </div>
         <div class="prony_xqy_nav">
-
             <a href="#cpcs" title="">产品参数</a>|
-            <!--<a href="#tjcp" title="">推荐产品</a>|-->
             <a href="#cpxq" title="">产品详情</a>
-            <!--<a href="#xgal" title="">相关案例</a>|-->
-
-            <!--<a href="#zxly" title="">在线留言</a>-->
         </div>
         <div class="dzcs" id="cpcs">
             <div class="dlcpys_text" id="cpys"><p>产品参数</p></div>
-            <div class="container">
-                <div class="examples">
-                    <div class="row">
-                        <div class="example  col-md-12 col-xs-12 ">
-                            <p>
-                            <p class="pro_p">
-                                自动翻板技术参数</p>
-                            <table cellpadding="0" cellspacing="0" class="dsa" width="100%">
-                                <tbody>
-                                <tr class="asd firstRow">
-                                    <td rowspan="2">
-                                        型号
-                                    </td>
-                                    <td rowspan="2">
-                                        配套压滤机<br/>
-                                        滤板宽度（mm）
-                                    </td>
-                                    <td rowspan="2">
-                                        整机重量<br/>
-                                        （公斤/米）
-                                    </td>
-                                    <td rowspan="2">
-                                        电机功率<br/>
-                                        （Kw）
-                                    </td>
-                                    <td rowspan="2">
-                                        翻板速度<br/>
-                                        （转/分）
-                                    </td>
-                                    <td colspan="4">
-                                        外型尺寸（mm）
-                                    </td>
-                                </tr>
-                                <tr class="asd">
-                                    <td>
-                                        B
-                                    </td>
-                                    <td>
-                                        B1
-                                    </td>
-                                    <td>
-                                        B2
-                                    </td>
-                                    <td>
-                                        B3
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        FB800.00
-                                    </td>
-                                    <td>
-                                        800&times;800
-                                    </td>
-                                    <td>
-                                        105
-                                    </td>
-                                    <td>
-                                        0.37
-                                    </td>
-                                    <td>
-                                        0.58
-                                    </td>
-                                    <td>
-                                        650
-                                    </td>
-                                    <td>
-                                        1050
-                                    </td>
-                                    <td>
-                                        1000
-                                    </td>
-                                    <td>
-                                        1350
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        FB1000.00
-                                    </td>
-                                    <td>
-                                        1000&times;1000
-                                    </td>
-                                    <td>
-                                        113
-                                    </td>
-                                    <td>
-                                        0.37
-                                    </td>
-                                    <td>
-                                        0.58
-                                    </td>
-                                    <td>
-                                        800
-                                    </td>
-                                    <td>
-                                        1160
-                                    </td>
-                                    <td>
-                                        1300
-                                    </td>
-                                    <td>
-                                        1650
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        FB1100.00
-                                    </td>
-                                    <td>
-                                        1100&times;1100
-                                    </td>
-                                    <td>
-                                        118
-                                    </td>
-                                    <td>
-                                        0.37
-                                    </td>
-                                    <td>
-                                        0.58
-                                    </td>
-                                    <td>
-                                        900
-                                    </td>
-                                    <td>
-                                        1260
-                                    </td>
-                                    <td>
-                                        1350
-                                    </td>
-                                    <td>
-                                        1700
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        FB1250.00
-                                    </td>
-                                    <td>
-                                        1250&times;1250
-                                    </td>
-                                    <td>
-                                        130
-                                    </td>
-                                    <td>
-                                        0.37
-                                    </td>
-                                    <td>
-                                        0.58
-                                    </td>
-                                    <td>
-                                        950
-                                    </td>
-                                    <td>
-                                        1410
-                                    </td>
-                                    <td>
-                                        1500
-                                    </td>
-                                    <td>
-                                        1850
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        FB1500.00
-                                    </td>
-                                    <td>
-                                        1500&times;1500
-                                    </td>
-                                    <td>
-                                        146
-                                    </td>
-                                    <td>
-                                        0.55
-                                    </td>
-                                    <td>
-                                        0.58
-                                    </td>
-                                    <td>
-                                        1200
-                                    </td>
-                                    <td>
-                                        1700
-                                    </td>
-                                    <td>
-                                        2000
-                                    </td>
-                                    <td>
-                                        2300
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        FR2000.00
-                                    </td>
-                                    <td>
-                                        2000&times;2000
-                                    </td>
-                                    <td>
-                                        160
-                                    </td>
-                                    <td>
-                                        0.55
-                                    </td>
-                                    <td>
-                                        0.58
-                                    </td>
-                                    <td>
-                                        1600
-                                    </td>
-                                    <td>
-                                        2320
-                                    </td>
-                                    <td>
-                                        2600
-                                    </td>
-                                    <td>
-                                        2900
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img id="param" />
         </div>
         <div class="prony_cpxq">
             <div class="dlcpys_text" id="cpxq"><p>产品详情</p></div>
-            <div class="prony_cpxq_con">
+            <div class="prony_cpxq_con" id="detail">
                 压滤机在过滤过程中，由于滤布的的毛细渗漏现象，滤板之间会有滴漏，这样即对环境造成污染，又增加了压滤机下面的储泥斗中的污泥的含水率，给操作带来很大麻烦。我公司设计的自动集液翻板系统可收集滤板滴漏的液体，避免压滤机工作现场的污泥，也避免了储泥斗中的已脱水物料被侵润。压滤机滤板下方装置了两块协调工作的翻板，在过滤过程中处于闭合状态，将滴漏的液体或滤板冲洗水导入两侧的集液槽。卸料时处于开启状态，起到导泥作用。
             </div>
             <!-- <img src="/templets/junding/images/sclc.jpg" alt="" />-->
@@ -656,94 +425,6 @@
                     width: 1140px;
                 }
             </style>
-
-            <div class="jundscxc_con" style="width:1140px;">
-
-                <script src="/templets/junding/js/tabcase.js"></script>
-                <div class="lqxhz">
-
-                    <div class="dlcpys_text" id="cpys"><p>生产现场</p></div>
-                    <div class="blk_18" style="margin-top:30px;">
-                        <div class="pcont" id="ISL_Cont_1">
-                            <div class="ScrCont">
-                                <div id="List1_1">
-
-                                    <a class="pl" target="_blank"><span><img src="/uploads/190710/1-1ZG0161442M2.jpg"
-                                                                             alt=""/></span><i>生产一隅 </i></a>
-                                    <a class="pl" target="_blank"><span><img src="/uploads/190713/1-1ZG310445R22.jpg"
-                                                                             alt=""/></span><i>生产一隅 </i></a>
-                                    <a class="pl" target="_blank"><span><img src="/uploads/190710/1-1ZG01615332W.jpg"
-                                                                             alt=""/></span><i>生产一隅 </i></a>
-                                    <a class="pl" target="_blank"><span><img src="/uploads/190710/1-1ZG0161400S7.jpg"
-                                                                             alt=""/></span><i>生产一隅 </i></a>
-                                    <a class="pl" target="_blank"><span><img src="/uploads/190710/1-1ZG0161244421.jpg"
-                                                                             alt=""/></span><i>生产一隅 </i></a>
-                                    <a class="pl" target="_blank"><span><img src="/uploads/190708/1-1ZFQJIC47.jpg"
-                                                                             alt=""/></span><i>生产一隅 </i></a>
-
-                                    <div class="clearfix"></div>
-
-                                </div>
-                                <div id="List2_1"></div>
-                            </div>
-                        </div>
-                        <!--  <a class="LeftBotton" onmousedown="ISL_GoUp_1()" onmouseup="ISL_StopUp_1()" onmouseout="ISL_StopUp_1()" href="javascript:void(0);" target="_self"></a>
-                          <a class="RightBotton" onmousedown="ISL_GoDown_1()" onmouseup="ISL_StopDown_1()" onmouseout="ISL_StopDown_1()" href="javascript:void(0);" target="_self"></a> -->
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="c"></div>
-                    <script type="text/javascript">
-                        <!--
-                        picrun_ini()
-                        //-->
-                        < !-- </script>
-                </div>
-                <!-- <img src="/templets/junding/images/sclc.jpg" alt="" />
-                 <img src="/templets/junding/images/al.jpg" alt="" />-->
-            </div>
-
-        </div>
-
-
-        <div class="jundnypro">
-            <div class="dlcpys_text" id="tjcp"><p>推荐产品</p></div>
-            <div class="jundpro_list_ny">
-                <ul>
-                    <li>
-                        <a href="/fushu/73.html" title="">
-                            <p><img src="/uploads/190722/1-1ZH2155225I3.jpg" alt=""/></p>
-                            <span>
-								<big>皮带输送机</big>
-								<small>详情+</small>
-								<div class="clearfix"></div>
-							</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/yalvji/46.html" title="">
-                            <p><img src="/uploads/190709/1-1ZF911314A28.jpg" alt=""/></p>
-                            <span>
-								<big>程控全自动压滤机</big>
-								<small>详情+</small>
-								<div class="clearfix"></div>
-							</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/fushu/78.html" title="">
-                            <p><img src="/uploads/190722/1-1ZH2154642304.jpg" alt=""/></p>
-                            <span>
-								<big>集液翻板</big>
-								<small>详情+</small>
-								<div class="clearfix"></div>
-							</span>
-                        </a>
-                    </li>
-
-                    <div class="clearfix"></div>
-                </ul>
-            </div>
-        </div>
     </div>
 </div>
 <!-- 产品内页 over -->
@@ -762,7 +443,7 @@
             <p><img src="templets/junding/images/footer_2.png" alt=""></p>
             <span>
 				<big>企业邮箱</big>
-				<small>邮箱：524797200@qq.com</small>
+				<small>邮箱：ahhqep@163.com</small>
 			</span>
             <div class="clearfix"></div>
         </div>
