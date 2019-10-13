@@ -83,10 +83,30 @@
 <!--大图-->
 <div id="solid">
     <ul>
-        <li><img src="templets/junding/images/banner_1.jpg" alt=""/></li>
+        <li>
+            <div style="position: relative">
+                <img src="templets/junding/images/banner_1.jpg" alt=""/>
+                <img id="q1" src="templets/junding/images/1.png" style="position: absolute;left: 0px;top:30px;" />
+                <img id="q2" src="templets/junding/images/2.png" style="position: absolute;left: 500px;top:30px;" />
+                <img id="q3" src="templets/junding/images/3.png" style="position: absolute;left: 1000px;top:30px;" />
+                <img id="q4" src="templets/junding/images/4.png" style="position: absolute;left: 1500px;top:30px;" />
+                <img id="q5" src="templets/junding/images/5.png" style="position: absolute;left: 2000px;top:30px;" />
+                <img id="q6" src="templets/junding/images/1.png" style="position: absolute;left: 2500px;top:30px;" />
+            </div>
+        </li>
     </ul>
-    <div id="btt">
-    </div>
+    <script>
+        setInterval(function () {
+            $.each([1,2,3,4,5,6],function(idx,item){
+                let left = $('#q'+item).position().left;
+                if(left < -500){
+                    left+=2500;
+                }
+                left-=1;
+                $('#q'+item).css('left',left);
+            })
+        },30)
+    </script>
 </div>
 <!-- 大图 B -->
 <script src="templets/junding/js/jquery-1.11.1.min.js" type="text/javascript"></script>

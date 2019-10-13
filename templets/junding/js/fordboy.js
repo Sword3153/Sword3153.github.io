@@ -35,9 +35,9 @@ var total=$("#solid ul").children().length;
 				clock();
 			}
 		});
-		var int=self.setInterval("clock()",3000)
+		var int=self.setInterval("clock()",3000000)
 		$("#solid ul li,#solid span").mouseleave(function(){
-			int=self.setInterval("clock()",3000)
+			int=self.setInterval("clock()",3000000)
 		});
 		$("#btt span").eq(1).css("margin-left","52px");
 		$("#btt span").eq(2).css("margin-left","90px");
