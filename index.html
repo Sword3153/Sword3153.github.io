@@ -86,21 +86,26 @@
         <li>
             <div style="position: relative">
                 <img src="templets/junding/images/banner_1.jpg" alt=""/>
-                <img id="q1" src="templets/junding/images/1.png" style="position: absolute;left: 0px;top:30px;" />
-                <img id="q2" src="templets/junding/images/2.png" style="position: absolute;left: 500px;top:30px;" />
-                <img id="q3" src="templets/junding/images/3.png" style="position: absolute;left: 1000px;top:30px;" />
-                <img id="q4" src="templets/junding/images/4.png" style="position: absolute;left: 1500px;top:30px;" />
-                <img id="q5" src="templets/junding/images/5.png" style="position: absolute;left: 2000px;top:30px;" />
-                <img id="q6" src="templets/junding/images/1.png" style="position: absolute;left: 2500px;top:30px;" />
+                <img id="q1" src="templets/junding/images/1.png" loaded="" style="height:200px;position: absolute;left: 500px;top:30px;" />
+                <img id="q2" src="templets/junding/images/banner_gl.jpg" style="height:200px;position: absolute;left: 1200px;top:30px;" />
             </div>
         </li>
     </ul>
     <script>
+        var q1load=false;
+        var q2load=false;
+        q1.onload = function(){
+            q1load=true;
+        }
+        q2.onload = function(){
+            q2load=true;
+        }
         setInterval(function () {
-            $.each([1,2,3,4,5,6],function(idx,item){
+            if(!q1load || !q2load)return;
+            $.each([1,2],function(idx,item){
                 let left = $('#q'+item).position().left;
-                if(left < -500){
-                    left+=2500;
+                if(left < -1000){
+                    left+=2000;
                 }
                 left-=1;
                 $('#q'+item).css('left',left);
