@@ -11,17 +11,17 @@
     <script type="text/javascript" src="templets/junding/js/main.js"></script>
 
     <!--<script type="text/javascript">-->
-        <!--try {-->
-            <!--var urlhash = window.location.hash;-->
-            <!--if (!urlhash.match("fromapp")) {-->
-                <!--if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {-->
-                    <!--window.location = "/m/index.html"; //这里的网址请改为你手机站的网址-->
-                <!--}-->
-            <!--}-->
+    <!--try {-->
+    <!--var urlhash = window.location.hash;-->
+    <!--if (!urlhash.match("fromapp")) {-->
+    <!--if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {-->
+    <!--window.location = "/m/index.html"; //这里的网址请改为你手机站的网址-->
+    <!--}-->
+    <!--}-->
 
-        <!--}-->
-        <!--catch (err) {-->
-        <!--}-->
+    <!--}-->
+    <!--catch (err) {-->
+    <!--}-->
     <!--</script>-->
 </head>
 
@@ -86,30 +86,22 @@
         <li>
             <div style="position: relative">
                 <img src="templets/junding/images/banner_1.jpg" alt=""/>
-                <img id="q2" src="templets/junding/images/banner_gl.jpg" style="height:200px;position: absolute;left: 1200px;top:30px;" />
+                <img id="q1" src="templets/junding/images/1.png"
+                     style="height:200px;position: absolute;left: 1200px;top:30px;"/>
             </div>
         </li>
     </ul>
     <script>
-        var q1load=false;
-        var q2load=false;
-        q1.onload = function(){
-            q1load=true;
-        }
-        q2.onload = function(){
-            q2load=true;
-        }
-        setInterval(function () {
-            if(!q1load || !q2load)return;
-            $.each([2],function(idx,item){
-                let left = $('#q'+item).position().left;
-                if(left < -1000){
-                    left+=2000;
+        q1.onload = function () {
+            setInterval(function () {
+                let left = $('#q1').position().left;
+                if (left < -1000) {
+                    left += 2000;
                 }
-                left-=1;
-                $('#q'+item).css('left',left);
-            })
-        },30)
+                left -= 1;
+                $('#q1').css('left', left);
+            }, 30)
+        }
     </script>
 </div>
 <!-- 大图 B -->
@@ -132,11 +124,11 @@
             </div>
             <!--<h3 class="menu_head current">水处理一体机</h3>-->
             <!--<div style="display:block" class="menu_body">-->
-                <!--<a href="/beng/index.html?page=999">MBR地埋一体化污水处理设备</a>-->
+            <!--<a href="/beng/index.html?page=999">MBR地埋一体化污水处理设备</a>-->
             <!--</div>-->
             <!--<h3 class="menu_head">环保项目方案设计施工</h3>-->
             <!--<div style="display:block" class="menu_body">-->
-                <!--<a href="#" class="inactive active">详情请来电咨询</a>-->
+            <!--<a href="#" class="inactive active">详情请来电咨询</a>-->
             <!--</div>-->
         </div>
         <script>
@@ -394,7 +386,8 @@
 <div class="jindfooter_bg">
     <div class="jindfooter">
         <div class="jindfooter_bot">
-            <div class="jindfooter_bot_l fl">版权所有：安徽恒泉机械制造有限公司      备案号：<a href="http://beian.miit.gov.cn" target="_blank">沪ICP备11042921号-1</a></div>
+            <div class="jindfooter_bot_l fl">版权所有：安徽恒泉机械制造有限公司      备案号：<a href="http://beian.miit.gov.cn"
+                                                                           target="_blank">沪ICP备11042921号-1</a></div>
             <div class="jindfooter_bot_r fr">技术支持：<a>Sword</a></div>
             <div class="clearfix"></div>
         </div>
