@@ -27,7 +27,7 @@ a:focus {outline-style:none; -moz-outline-style: none;}
 .lqx_top{height: 40px;background:url(../images/top_1.jpg) no-repeat center top;-moz-box-shadow:0 0 4px #879094;-webkit-box-shadow:0 0 4px #879094;box-shadow:0 0 4px #879094;}
 .lqx_top_con{width: 1200px;margin: 0 auto;}
 .lqx_top_con_l{line-height: 40px;height: 40px;width: 400px;color: #777777;}
-.lqx_top_con_r{background:url(../images/top_2.png) no-repeat center left;width: 200px;color: #777777;line-height: 40px;height: 40px;padding-left: 21px;}
+.lqx_top_con_r{background:url(../images/top_2.png) no-repeat center left;width: 235px;color: #777777;line-height: 40px;height: 40px;padding-left: 35px;}
 .lqx_top_con_r span{color: #fe9001;}
 /**********logo**********/
 .apllogo_con{width:100%;}
@@ -773,3 +773,11 @@ video::-webkit-media-controls-panel {width: calc(100% + 30px); }
     background: url(../images/hot.gif) no-repeat 226px 7px;
 }
 #jdxg_1{ width:167px;}
+
+.banner_1{
+    width: 1920px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
