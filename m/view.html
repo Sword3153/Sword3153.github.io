@@ -162,11 +162,11 @@
         var tid = GetQueryString('aid');
         $('#title').text(data[tid].title);
         $.each(data[tid].img,function (idx,item) {
-            $('.cf').append('<li><a><i><img src=\"/product/'+ item + '\" /></i></a></li>')
+            $('.cf').append('<li><a><i><img src=\"/m/assets/product/'+ item + '\" /></i></a></li>')
         })
         $('.cf').append('<div style="clear:both"></div>');
         $('#des').text(data[tid].des);
-        $('#param').attr('src','/product/' + data[tid].param);
+        $('#param').attr('src','/m/assets/product/' + data[tid].param);
     })
 
 </script>
