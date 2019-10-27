@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>程控全自动压滤机_上海钧鼎机械制造有限公司</title>
-    <meta name="description" content="上海钧鼎机械制造有限公司位于上海市宝山区，是一家集产品开发、设计、制造、销售、服务于一体的环保过滤设备综合型公司。公司主打过滤设备系列：包括程控全自动压滤机,液压压滤机,液压隔膜压滤机,高压隔膜压滤机,洗沙压滤机,打桩污泥专用设备等系列过滤设备。" />
+    <meta name="description" content="安徽恒泉机械制造有限公司位于长三角腹地，中洲咽喉，淮河之滨，是一家集产品开发、设计、制造、销售、服务于一体的环保过滤设备综合型公司。" />
     <meta name="keywords" content="程控全自动压滤机,液压压滤机,液压隔膜压滤机,高压隔膜压滤机,洗沙压滤机,打桩污泥专用设备" />
 
     <!-- Bootstrap -->
@@ -28,7 +28,7 @@
             <a href="index.html"><img src="/m/assets/images/about_r1_c2.jpg  " width="15" height="24"></a>
         </div>
         <div class=" col-xs-11 ">
-            压滤机系列
+            压滤机
         </div>
         <script type="text/javascript" src="/m/assets/js/modernizr.custom.js"></script>
         <script type="text/javascript" src="/m/assets/js/jquery.dlmenu.js"></script>
@@ -38,10 +38,8 @@
             <ul class="dl-menu">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="list.html?tid=1">关于我们</a></li>
-                <li><a href="list.html?tid=2">产品中心</a></li>
-                <li><a href="list.html?tid=3">合作案例</a></li>
-
-                <li><a href="list.html?tid=5">新闻中心</a></li>
+                <li><a href="list.html?tid=2">压滤机</a></li>
+                <!--                <li><a href="list.html?tid=3">过滤演示</a></li>-->
                 <li><a href="list.html?tid=6">人力资源</a></li>
                 <li><a href="list.html?tid=7">联系我们</a></li>
             </ul>
@@ -56,13 +54,8 @@
 <div class="hr_gra1y"></div>
 
 <div class="container">
-
-    <div class="lj overflow clearfix " style="line-height:40px;">
-           当前位置:<a href='index.html'>主页</a> > <a href='list.html?tid=2'>产品中心</a> > <a href='list.html?tid=11'>压滤机系列</a> >
-    </div>
-
     <div class="x_inf">
-        <h3>程控全自动压滤机</h3>
+        <h3 id="title"></h3>
         <div class="jdprolist">
             <ul class="cf">
                 <li>
@@ -70,55 +63,118 @@
                         <i><img src="/uploads/190710/1-1ZG0093332620.jpg"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        <i><img src="/uploads/190720/1-1ZH01K040256.jpg"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i><img src="/uploads/190720/1-1ZH01K1104R.jpg"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i><img src="/uploads/190720/1-1ZH01K13T18.jpg"></i>
-                    </a>
-                </li>
                 <div style="clear:both"></div>
             </ul>
-            <script type="text/javascript">
-
-                $(".cf").find("img").each(function (i, value) {
-
-                    if ($(this).attr("src") == "") {
-
-                        $(this).parent().remove();
-
-                    }
-
-                })
-
-            </script>
-
         </div>
-
-
-
-        <p>自动拉板压滤机采用PLC控制，能对压滤机进行各项操作（滤板压紧、集液板合并与开启、松开滤板、拉开滤板）并留有远程控制接口，能远程自动操作控制，另可根据需要提供曲张振打、集液翻板、导泥储泥、皮带输送机、滤布冲洗系统的服务。 </p> <p><img src="/uploads/190720/1-1ZH0092402393.jpg" ></img></p>
-
-
+        <p id="des"> </p>
+        <p><img id="param" src="" ></img></p>
     </div>
-
-
-    <div class="pf clearfix overflow  ">
-        <ul>
-            <li class="pt10 hui tl">上一篇：<a href='view.html?aid=10'>程控全自动隔膜压滤机</a> </li>
-            <li class="pt10 hui tl">下一篇：<a href='view.html?aid=60'>液压隔膜压滤机</a> </li>
-        </ul>
-    </div>
-
 </div>
+
+<script>
+    var data={
+        46:{
+            title:'程控全自动压滤机',
+            img:['1-1ZG0093332620.jpg','1-1ZH01K040256.jpg','1-1ZH01K1104R.jpg','1-1ZH01K13T18.jpg'],
+            des:'自动拉板压滤机采用PLC控制，能对压滤机进行各项操作（滤板压紧、集液板合并与开启、松开滤板、拉开滤板）' +
+                '并留有远程控制接口，能远程自动操作控制，另可根据需要提供曲张振打、集液翻板、导泥储泥、皮带输送机、' +
+                '滤布冲洗系统的服务。',
+            param:'1-1ZH0092402393.jpg',
+        },
+        10:{
+            title:'程控全自动隔膜压滤机',
+            img:['1-1ZH2145530537.jpg','1-1ZH2145603Y5.jpg','1-1ZH2145632139.jpg','1-1ZH2145FQ22.jpg'],
+            des:'隔膜压榨压滤机由隔膜板和厢式滤板排列组成滤室，在输料泵的压力作用下将浆料输入滤室，通过过滤' +
+                '介质（滤布）将浆料中的固体和液体分离，当浆料中的固体行程滤饼后，再向隔膜通入空气，对滤室内' +
+                '的固体充分压榨，降低含水率。对于粘性物料的过滤及对含水率要求较高的用户，此机更有其独特的特性。\n' +
+                '\n' +
+                '滤板采用增强聚丙烯模压而成，隔膜与聚丙烯滤板镶嵌在一起，坚固牢靠、不易脱落、使用寿命长。\n' +
+                '自动拉板压滤机可以采用微电脑控制器、PLC、触摸屏控制能对压滤机进行各项操作（如滤板压紧、集液板' +
+                '合并与开启、松开滤板、水冲洗等），并留有远程控制接口，能远程自动操作控制。',
+            param:'',
+        },
+        61:{
+            title:'液压压滤机',
+            img:['1-1ZH21534315S.jpg','1-1ZH21533425Y.jpg','1-1ZH2153310644.jpg','1-1ZH215345S39.jpg'],
+            des:'隔膜压榨压滤机，是由隔膜板和厢式滤板排列组成滤室，在输料泵的压力下将滤料输入滤室，通过过滤介质（滤' +
+                '布）将固液分离，行程滤饼后，再向隔膜腔通入压缩空气，对滤室内的固体充分压榨，降低含水率。特别对于粘性' +
+                '物料的过滤，要求滤饼含水量低的物料，更显示其独特的优越性。',
+            param:'1-1ZH0094019615.jpg',
+        },
+        60:{
+            title:'液压隔膜压滤机',
+            img:['1-1ZH2152R1D9.jpg','1-1ZH215291XO.jpg','1-1ZH2153025P5.jpg','1-1ZH21530524W.jpg'],
+            des:'液压自动保压压滤机因为分离效果好，操作简单，维护成本低等特点，被广泛应用于各个行业。液压自动保压压滤机' +
+                '主要由四大部分组成：机架、滤板、液压系统和电气控制部分。型号分为：320/450/630/800/1000/1250/1500型。' +
+                '液压自动保压压滤机采用液压装置座位压紧、松开滤板的动力结构，并采用电接点压力表实现自动保压，设备同事具有' +
+                '自动压紧、自动保压、自动补压的功能。安全省力，整机工作运行稳定。电气部分配有多种安全装置，能够确保操作人' +
+                '员的安全以及压滤机的正常安全使用。',
+            param:'1-1ZH0094019615 (1).jpg',
+        },
+        116:{
+            title:'泥浆不落地压滤机',
+            img:['1-1ZH2143040I6.jpg','1-1ZH2143110139.jpg','1-1ZH2143139420.jpg','1-1ZH214320U28.jpg'],
+            des:'该机适用于钻采泥、隧道、煤矿、建筑、环境污染污水应急处理等工程施工中所产生的废弃泥浆或污水现场脱水；同事也' +
+                '适用于对高压旋喷法施工或钻孔灌注桩等一些施工现场，对施工生产的废弃泥浆进行现场脱水处理，形成泥饼与清水，使原来' +
+                '的废弃泥浆外运排放为土渣外运处置，减少了施工弃浆排放量，分理处的清水能全部回收用于钻孔与水泥浆液的控制，节约' +
+                '了水资源，改善了施工环境，真正实现了压污泥为资源，滤污水为清泉的目的。',
+            param:'',
+        },
+        70:{
+            title:'皮带输送一体压滤机',
+            img:['1-1ZH2152206224.jpg','1-1ZH2152241191.jpg','1-1ZH21523154X.jpg','1-1ZH2152349348.jpg'],
+            des:'皮带输送机根据用途可分为：重型皮带输送机和轻型皮带输送机，污泥脱水行业主要采用重型皮带输送机。水平输送机至于压' +
+                '滤机底部，采用可承重横梁，增加导泥装置，重型支腿，可以把压滤机直接放置在输送机上。',
+            param:'1-1ZH00952241T.jpg',
+        },
+        67:{
+            title:'圆形耐高压压滤机',
+            img:['1-1ZF9155Z3145.jpg'],
+            des:'用于石材废水、陶瓷、高岭土、建材等行业的固液分离，过滤压力大，滤饼含水率低的特点。',
+            param:'1-1ZH0095351J3.jpg',
+        },
+        62:{
+            title:'机械压滤机',
+            img:['1-1ZF9161632S6.jpg'],
+            des:'机械压紧压滤机压紧时由电动机带动减速机，经传动部件推动压紧板压紧滤板。压紧螺杆和固定' +
+                '螺母设计有可靠的自锁螺旋角，能保证压紧时的可靠性和稳定性。用电机综合保护器实现自动控制。' +
+                '可对电机实现过热和过载保护。\n' +
+                '机具有自动化程度高、机械强度高、使用维修方便、运行费用低等特点。',
+            param:'1-1ZH0094P2346.jpg',
+        },
+        66:{
+            title:'手动千斤顶压滤机',
+            img:['1-1ZH2152615L6.jpg'],
+            des:'千斤顶压紧压滤机采用螺旋千斤顶作为压紧装置，具有结构简单，操作方便，无需电源，经济实用的特点，' +
+                '一般用于过滤面积1--40平方的压滤机。',
+            param:'1-1ZH0095000294.jpg',
+        },
+        117:{
+            title:'特种压滤机',
+            img:['1-1ZH2144516493.jpg','1-1ZH21445495b.jpg','1-1ZH2144622443.jpg','1-1ZH2144A3632.jpg'],
+            des:'可根据使用客户不同的使用要求，订制压滤机材质、款式等，从而满足使用方的不同要求！',
+            param:'',
+        },
+    }
+
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+    $(function () {
+        var tid = GetQueryString('aid');
+        $('#title').text(data[tid].title);
+        $.each(data[tid].img,function (idx,item) {
+            $('#cf').append('<li><a><i><img src=\"/product/'+ item + '\" /></i></a></li>')
+        })
+        $('#des').text(data[tid].des);
+        $('#param').attr('src',data[tid].param);
+    })
+
+</script>
 
 <!--copt-->
 <div class="w100 pt2 ">
@@ -127,7 +183,7 @@
     </div>
     <div class="copy_bg">
 
-        版权所有：上海钧鼎机械制造有限公司<br> 备案号：沪ICP备11042921号-1
+        版权所有：安徽恒泉机械制造有限公司<br> 备案号：沪ICP备11042921号-1
     </div>
 </div>
 
