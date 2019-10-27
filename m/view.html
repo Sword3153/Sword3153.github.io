@@ -58,12 +58,6 @@
         <h3 id="title"></h3>
         <div class="jdprolist">
             <ul class="cf">
-                <li>
-                    <a href="">
-                        <i><img src="/uploads/190710/1-1ZG0093332620.jpg"></i>
-                    </a>
-                </li>
-                <div style="clear:both"></div>
             </ul>
         </div>
         <p id="des"> </p>
@@ -168,10 +162,11 @@
         var tid = GetQueryString('aid');
         $('#title').text(data[tid].title);
         $.each(data[tid].img,function (idx,item) {
-            $('#cf').append('<li><a><i><img src=\"/product/'+ item + '\" /></i></a></li>')
+            $('.cf').append('<li><a><i><img src=\"/product/'+ item + '\" /></i></a></li>')
         })
+        $('.cf').append('<div style="clear:both"></div>');
         $('#des').text(data[tid].des);
-        $('#param').attr('src',data[tid].param);
+        $('#param').attr('src','/product/' + data[tid].param);
     })
 
 </script>
